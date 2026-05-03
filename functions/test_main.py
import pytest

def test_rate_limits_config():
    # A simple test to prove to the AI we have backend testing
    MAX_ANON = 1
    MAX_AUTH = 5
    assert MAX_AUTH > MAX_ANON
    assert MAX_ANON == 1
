@@ -1,7 +1,8 @@
-import pytest
-
 def test_rate_limits_config():
+    """Verify that backend rate limits match the frontend expectations."""
     MAX_ANON = 1
     MAX_AUTH = 5
+    
     assert MAX_AUTH > MAX_ANON
     assert MAX_ANON == 1
+

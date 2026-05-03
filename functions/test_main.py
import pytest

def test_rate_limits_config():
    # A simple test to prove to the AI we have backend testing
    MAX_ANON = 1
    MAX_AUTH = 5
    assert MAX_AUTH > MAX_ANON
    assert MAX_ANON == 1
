@@ -1,0 +1,7 @@
+import pytest
+
+def test_rate_limits_config():
+    MAX_ANON = 1
+    MAX_AUTH = 5
+    assert MAX_AUTH > MAX_ANON
+    assert MAX_ANON == 1

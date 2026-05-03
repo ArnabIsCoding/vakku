@@ -1,0 +1,45 @@
+.ec-wrap {
+  margin-bottom: 48px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--grey-1);
+}
+.ec-usage {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.ec-usage__pips {
+  display: flex;
+  gap: 3px;
+}
+
+.ec-usage__pip {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--grey-1);
+  transition: background 300ms;
+}
+
+.ec-usage__pip--used {
+  background: rgba(246, 229, 78, 0.4);
+}
+
+.ec-usage__text {
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--grey-3);
+  white-space: nowrap;
+}
+
+.ec-optional {
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--grey-3);
+}
